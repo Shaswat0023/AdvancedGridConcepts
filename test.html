@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bag{
+            background-color: aquamarine;
+            border: 1px solid black;
+        }
+        .container{
+            
+            height: 1px;
+            height: 1px;
+            padding: 20px;
+            height: 700px;
+            background-color: yellow;
+            border: 1px solid black;
+            display: grid;
+            grid-template-rows: 0.3fr 1fr 1fr;
+            grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+            grid-template-areas: 
+            "lhd hd hd hd hd hd hd rhd"
+            "lsb main main main main main main rsb "
+            "lft ft ft ft ft ft ft rft";
+            /* gap: 10px; */
+        }
+        .box{
+            border: 1px solid black;
+            background-color: aqua;
+        }
+        #lsheader{
+            grid-area: lhd;
+        }
+        #rsheader{
+            grid-area: rhd;
+        }
+        #header{
+            grid-area: hd;
+        }
+        #lsidebar{
+            grid-area: lsb;
+        }
+        #rsidebar{
+            grid-area: rsb;
+        }
+        #content{
+            grid-area: main;
+        }
+        #lsfooter{
+            grid-area: lft;
+        }
+        #footer{
+            grid-area: ft;
+        }
+        #rsfooter{
+            grid-area: rft;
+        }
+    </style>
+</head>
+<body>
+    <div class="bag">
+    <h1>Grid Template Area</h1>
+    <div class="container">
+        <div class="box" id="lsheader">LeftSideHeader</div>
+        <div class="box" id="rsheader">RightSideHeader</div>
+        <div class="box" id="header">Header</div>
+        <div class="box" id="lsidebar">LeftSidebar</div>
+        <div class="box" id="rsidebar">RightSidebar</div>
+        <div class="box" id="content">Content</div>
+        <div class="box" id="lsfooter">LeftSideFooter</div>
+        <div class="box" id="footer">Footer</div>
+        <div class="box" id="rsfooter">RightSideFooter</div>
+    </div>
+</div>
+</body>
+</html>

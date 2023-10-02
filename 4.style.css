@@ -1,0 +1,71 @@
+.container{
+    border: 1px solid brown;
+    background-color: yellow;
+    height: 700px;
+    width: 600px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px;
+    /* grid-gap: 10px; */
+
+    /* justify-content: start; */
+    /*All the items of the grid places at the start in horizontal axis*/
+
+    /* justify-content: end;  */
+    /*All the items of the grid places at the end in horizontal axis*/
+
+    /* justify-content: center;  */
+    /*All the items of the grid places at the centre in horizontal axis*/
+    
+    /* justify-content: space-between; */
+    /*All the items of the grid generates space between them except the fisrt and last elements in  horizontal axis*/
+
+    /* justify-content: space-around;  */
+    /*Space is generated to left and right of every box*/
+
+    /* justify-content: space-evenly;  */
+    /* Equal Space is generated to left and right of every box */
+
+
+    /* align-items:start; */
+
+    /* align-items:end; */
+
+    /* align-items:center; */
+
+    /* align-items: baseline; */
+
+    /* align-items: stretch; */
+
+    /* align-content: space-between; */
+    /* It sets the gap between rows */
+
+    /* align-content: space-evenly; */
+
+    /* align-content: space-around; */
+
+    /* place-content:center; */
+     /*It is a shorthand notation for align items and justify content  */ 
+
+     place-items: center;
+     /* short hand notation for justify items and align items */
+     
+
+}
+.box{
+    border: 1px solid red;
+    background-color: aqua;
+}
+#box1{
+    /* justify-self: start; */
+    /* The box with the id box 1 is shifted to the starting of the horizonatal axis */
+    /* justify-self:end; */
+    /* justify-self:center; */
+
+    align-self: center;
+    /* the item is aligned to the center of the vertical axis.  */
+
+
+}
+
+/* the difference between the values inline grid and grid is that the inline grid will make the element inline while grid will make it a block level element */
